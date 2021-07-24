@@ -4,9 +4,9 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    
-    
 }
+
+/* Header */
 
 .flex__container__header {
     width: 100%;
@@ -31,30 +31,52 @@
     /* border: black 1px solid; */
 }
 
+/* Main */
 .flex__container__main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
-   
+      
    
     
 }
 
 .flex__item__main {
-    border: black 1px solid;
+    border: gray 1px solid;
     flex: 20%;
-    text-align: center;   
+    text-align: center;
+    /* border-radius: 10px;   */
 }
+
 
 
 article {
     background-color: #FEC504;
+    /* border-radius: 10px; */
+    display: flex;
+    flex-direction: column; 
+    /* align-items: space-around; */
+    align-items: space-between;
+    justify-content: space-between;
 }
+
+article > a {
+    display: flex;
+    gap: 5px;
+    margin: 10px; 
+    padding: 5px
+}
+
 
 
 .imagem {
     width: 100%;
+    height: 30vh;
+    border-radius: 10px;
+    margin-bottom: 0;
+    
+    
 }
 
 footer {
@@ -76,7 +98,7 @@ footer {
         }
 
     .flex__item__main {
-        border: black 1px solid;
+        border: gray 1px solid;
         flex: 100%;
         text-align: center;
     }
@@ -85,20 +107,69 @@ footer {
 /* Gerando Tela responsiva */
 @media (min-width: 426px) and (max-width: 768px) {
     .flex__item__main {
-        border: black 1px solid;
+        border: gray 1px solid;
         flex: 40%;
         text-align: center;
     }
+
+    .flex__item__main {
+        border-radius: 10px;
+    }
+
+    article {
+        border-radius: 10px;
+    }
+
+    .imagem {
+        border-radius: 10px;
+    }
+
+
 
 }
 
 /* Gerando Tela responsiva */
 @media (min-width: 769px) and (max-width: 1024px) {
     .flex__item__main {
-        border: black 1px solid;
+        border: gray 1px solid;
         flex: 30%;
         text-align: center;
     }
 
+    .flex__item__main {
+        border-radius: 10px;
+    }
+
+    article {
+        border-radius: 10px;
+    }
+
+    .imagem {
+        border-radius: 10px;
+    }
+
 }
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .flex__item__main {
+        border: gray 1px solid;
+        flex: 20%;
+        text-align: center;
+    }
+
+    .flex__item__main {
+        border-radius: 10px;
+    }
+
+    article {
+        border-radius: 10px;
+    }
+
+    .imagem {
+        border-radius: 10px;
+    }
+
+}
+
+
 
