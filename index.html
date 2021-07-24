@@ -4,29 +4,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/home-style.css">
   <title>Olimpify</title>
 </head>
 <body>
 <!-- Início header Menu -->  
-  <header>
+  <header class="flex__header">
 
-    <img src="" alt="logo">
-
+    <div class="logo__menu">
+      <img src="./img/logologo.png" alt="logo">
+    </div>
+    
     <nav>
-      <ul>
-        <li><a href="#" target="_blank">Home</a>
+      <ul class="menu">
+        <li>
+          <a href="#" target="_blank">Home</a>
         </li>
 
-        <li><a href="#modalidades">Modalidades</a>
+        <li>
+          <a href="#modalidades">Modalidades</a>
         </li>
 
-        <li> <a href="#" target="_blank">Contato</a>
+        <li>
+          <a href="#" target="_blank">Contato</a>
         </li>
 
-        <li> <a href="#" target="_blank">Equipe</a>
+        <li>
+          <a href="#" target="_blank">Equipe</a>
         </li>
 
-        <li> <a href="#" target="_blank">Login</a>
+        <li>
+          <a href="#" target="_blank">Login</a>
         </li>
       </ul>
     </nav>
@@ -35,78 +43,91 @@
 
   <main>
     <!-- Div banner -->
-    <div>
-      <img src="" alt="banner">
-    </div>
+    <div class="banner__parallax">
 
-    <!-- div Modalidades -->
-    <div class="flex-container" id="modalidades">
-      <div class="grid-container">
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
+      <div class="detalhe">
+        <div class="texto">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla delectus et officiis quaerat laborum iure aut obcaecati ea nobis, necessitatibus fugit earum, perspiciatis ad fugiat facere ducimus deleniti architecto pariatur!</p>
         </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
-        <div>
-          <h2>Atletismo</h2>
-          <img src="" alt="">
-        </div>
+        <div class="botao">
+          <button type="reset">Botão</button>
+        </div>      
       </div>
+
     </div>
   </main>
-
-  <!-- quadro de medalhas -->
-  <aside>
-    <div class="medals">
-      <div class="grid-medals">
-        <div class="grid-title">1</div>
-        <div class="grid-flag">2</div>
-        <div class="grid__item2">3</div>
-        <div class="grid__item2">4</div>
-        <div class="grid__item2">5</div>
-        <div class="grid-flag">6</div>
-        <div class="grid__item2">7</div>
-        <div class="grid__item2">8</div>
-        <div class="grid__item2">9</div>
-        <div class="grid-flag">10</div>
-        <div class="grid__item2">11</div>
-        <div class="grid__item2">12</div>
-        <div class="grid__item2">13</div>
-        <div class="grid-flag">14</div>
-        <div class="grid__item2">15</div>
-        <div class="grid__item2">16</div>
-        <div class="grid__item2">17</div>
+    <!-- div Modalidades -->
+    <div class="main-grid">
+      <div class="flex-container1" id="modalidades">
+        <div class="modalidades-container">
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+          <a href="#">
+          <div class="item-flex">
+            <h2>Atletismo</h2>
+          </div></a>
+        </div>
       </div>
-    </div>
-  </aside>
+   
 
+    <!-- quadro de medalhas -->
+    <aside>
+      <div class="medals">
+          <div class="grid__title">Quadro de medalhas</div>
+          <div class="grid__item">países</div>
+          <div class="grid__item"> <img src="./img/gold-medal.png" alt=""> </div>
+          <div class="grid__item"> <img src="./img/silver-medal.png" alt=""> </div>
+          <div class="grid__item"> <img src="./img/bronze-medal.png" alt=""> </div>
+          <div class="grid__item">6</div>
+          <div class="grid__item">7</div>
+          <div class="grid__item">8</div>
+          <div class="grid__item">9</div>
+          <div class="grid__item">10</div>
+          <div class="grid__item">11</div>
+          <div class="grid__item">12</div>
+          <div class="grid__item">13</div>
+          <div class="grid__item">14</div>
+          <div class="grid__item">15</div>
+          <div class="grid__item">16</div>
+          <div class="grid__item">17</div>
+      </div>
+
+      <div class="curiosidades">
+        <p>curiosidades</p>
+      </div>
+    </aside>
+    
+</div>
   <!-- FOOTER -->
   <footer>
     <p> &copy; Copyright - LaNunes Tech</p>
