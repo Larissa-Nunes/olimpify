@@ -6,8 +6,7 @@
   list-style: none;
 }
 
-main {
-
+.banner__parallax {
   background-image: url("../img/paralax.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -27,9 +26,7 @@ body
   font-size: 24px;
 }
 
-.botao {
-  transform: translate(50%, 50%);
-}
+.botao {}
 
 .flex__header {
   display: flex;
@@ -37,11 +34,15 @@ body
   flex-wrap: wrap;
   align-items: center;
   background-color: #f2f2f2;
+  position: fixed;
+
 }
 
 .logo__menu {
   flex: 50%;
   padding: 10px;
+  border: 1px solid red;
+  text-align: justify;
 }
 
 .logo__menu img {
@@ -59,7 +60,6 @@ li {
 }
 
 .menu li a {
-  
   color: #031e6d;
   font-weight: bold;
 }
@@ -68,11 +68,8 @@ li {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "modalidades medalhas"
-  "modalidades curiosidades";
-  margin:100px;
+  grid-template-areas: "modalidades medalhas" "modalidades curiosidades";
 }
-
 
 .medals {
   grid-area: "medalhas";
@@ -96,48 +93,93 @@ li {
 
 .grid__item {
   text-align: center;
-  border: 1px solid #B5B5B5;
+  border: 2px solid #B5B5B5;
   padding: 5px;
 }
-
 
 .curiosidades {
   grid-area: "curiosidades";
 }
 
-.modalidades-container
-{
-    display: flex;
-    margin: 10px;
-    justify-content:center;
-    flex-wrap: wrap;
-    gap: 80px;
-    grid-area: "modalidades";
+.modalidades-container {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  grid-area: "modalidades";
 }
 
-.item-flex
-{
-    border-radius: 5px;
-    text-align: center;
-    background-image: url('../img/atletismo2.jpg');
-    background-size: cover;
-    width:200px;
-    height: 200px;
+.item-flex {
+  border-radius: 5px;
+  text-align: center;
+  background-image: url('../sport-pages/atletismo/img/atletismo2.jpg');
+  background-size: cover;
+  width: 200px;
+  height: 200px;
 }
+/* Footer */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: ". copy logos";
+  background-color: green;
+  width: 100vw;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  margin-left: 50%;
+  transform: translate(-50%);
+  align-self: center;
+  grid-area: copy;
+}
+
+.logo{
+  width: 5em;
+  padding: 5px;
+}
+
+.poweredby {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  grid-area: logos;
+}
+
+.poweredby div {
+  margin-right: 30px;
+}
+
+
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
+
 @media (max-width: 800px) {
   .menu {
     flex: 100%;
     align-items: center;
     width: 100vw;
   }
-
   .logo__menu {
     flex: 100%;
+    /* text-align: center; */
+  }
+  
+  footer {
+    padding: 1em;
     text-align: center;
   }
+  /* .logo {
+    display: none;
+  } */
 }
 
-
-
+@media (min-width: 1000px) {
+  .banner__parallax
+  {
+    background-image: url("../img/banner.jpg");
+  }
+}

@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border: solid 2px red;
+    width: 100%;
+}
+
+.lista-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.lista-menu>li {
+    padding: 10px;
+    border: solid 2px red;
+    margin-right: 5px;
+}
+
+.lista-menu a {
+    text-decoration: none;
+}
+
+.grid-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat 2fr 2fr 1fr;
+    grid-template-areas: "banner banner" "modalidades aside";
+    width: 100vw;
+    height: 100vh;
+}
+
+.grid-modalidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "esp1 esp2 esp3 esp4" "esp5 esp6 esp7 esp8";
+    width: 75vw;
+    height: 90vh;
+    padding-left: 7px;
+    grid-area: modalidades;
+}
+
+.banner {
+    width: 90vw;
+    height: 50vh;
+    border: solid 2px blue;
+    justify-self: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    grid-area: banner;
+}
+
+.esp1 {
+    border: solid red;
+    grid-area: esp1;
+}
+
+.esp2 {
+    border: solid red;
+    grid-area: esp2;
+}
+
+.esp3 {
+    border: solid red;
+    grid-area: esp3;
+}
+
+.esp4 {
+    border: solid red;
+    grid-area: esp4;
+}
+
+.esp5 {
+    border: solid red;
+    grid-area: esp5;
+}
+
+.esp6 {
+    border: solid red;
+    grid-area: esp6;
+}
+
+.esp7 {
+    border: solid red;
+    grid-area: esp7;
+}
+
+.esp8 {
+    border: solid 2px red;
+    grid-area: esp8;
+}
+/* 
+aside {
+    border: solid 2px red;
+    width: 20vw;
+} */
+
+footer {}
+
+@media (min-width: 320px) and (max-width: 602px) {
+    header {
+        width: 100%;
+    }
+    .grid-main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "banner" "modalidade";
+        padding: 0 auto;
+    }
+    .grid-modalidades {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-areas: "banner" "esp1" "esp2" "esp3" "esp4" "esp5" "esp6" "esp7" "esp8";
+        width: 100vw;
+        height: 90vh;
+        grid-area: modalidade;
+    }
+    .grid__item__mobile {
+        width: 90vw;
+        height: 50vh;
+        margin-top: 10px;
+    }
+    .section__item__1 {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 95vw;
+    }
+}
