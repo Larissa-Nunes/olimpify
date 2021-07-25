@@ -1,0 +1,36 @@
+.login__input-border::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 0;
+    margin-bottom: 16px;
+    background:linear-gradient(120deg,#031E6B, #4DE4CF);
+    transition: .3s ease-in-out;
+}
+
+.login__input:focus + .login__input-border::after {
+    width: 100%;
+}
+
+.login__submit {
+    transition: .5s ease-in-out
+}
+
+.login__container {
+    animation-duration: 3.5s;
+    animation-timing-function: ease-out;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -120%;
+    }
+
+    to {
+        margin-top: 0%;
+    }
+
+
+
+}
