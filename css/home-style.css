@@ -93,11 +93,12 @@ li {
 .main-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr;
   grid-template-areas: "modalidades medalhas" "modalidades curiosidades";
 /*   margin-top: 100px; */
   scroll-behavior: smooth;
   /* border: 1px solid red; */
+  margin: 100px;
 }
 
 .modalidades-container a h2 {
@@ -167,6 +168,10 @@ li {
   flex-wrap: wrap;
   gap: 50px;
   grid-area: "modalidades";
+}
+
+.modalidades-container > a > h2 {
+  margin-top: 10px;
 }
 .pais 
 {
@@ -284,12 +289,47 @@ footer p {
   .main-grid {
     display: flex;
     flex-direction: column-reverse;
+    margin: 0;
   }
 
   .modalidades-container {
     margin-top: 30px;
   }
 
+
+
+}
+
+.flex__container__footer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 8vh;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+/* .flex-item-left > p {
+  margin: 30px;
+} */
+
+.flex-item-right {
+  flex: 50%;
+  display: inline-block;
+  text-align: center;
+  flex-direction: row-reverse;
+}
+
+
+@media (max-width: 800px) {
+  .flex-item-right, .flex-item-left {
+    flex: 100%;
+  }
+
+  .flex-item-left > p {
+    font-size: 10px;
+  }
 }
 
 @media (min-width: 1000px) {
