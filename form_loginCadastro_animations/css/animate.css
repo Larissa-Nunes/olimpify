@@ -17,7 +17,7 @@
 }
 
 .login__container {
-    animation-duration: 3.5s;
+    animation-duration: 2.0s;
     animation-timing-function: ease-out;
     animation-name: slidein;
 }
