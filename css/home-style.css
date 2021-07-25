@@ -24,11 +24,13 @@
   background-size: cover;
   background-position: top;
 }
+
 body
 {
   font-family: 'Spartan', sans-serif;
   text-align: center;
   font-size: 15px;
+  background: linear-gradient(120deg, #031E6B, #4DE4CF);
 }
 .detalhe {
   height: 800px;
@@ -38,8 +40,15 @@ body
   font-size: 24px;
 }
 
-.botao 
+button[type="reset"] 
 {
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #031E6B;
+  background-color: #f2f2f2;
 
 }
 
@@ -69,11 +78,11 @@ body
 .menu {
   display: flex;
   flex: 50%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 li {
-  padding: 10px;
+  /* padding: 10px; */
 }
 
 .menu li a {
@@ -88,7 +97,11 @@ li {
   grid-template-areas: "modalidades medalhas" "modalidades curiosidades";
 /*   margin-top: 100px; */
   scroll-behavior: smooth;
-  border: 1px solid red;
+  /* border: 1px solid red; */
+}
+
+.modalidades-container a h2 {
+  color: #f2f2f2;
 }
 
 .medals {
@@ -106,6 +119,7 @@ li {
 .flex-main
 {
   display: flex;
+  margin-top: 30px;
 }
 .grid__title {
   grid-column: 1/5;
@@ -121,11 +135,14 @@ li {
   border: 2px solid #B5B5B5;
   align-items: center;
   justify-content:center;
+  border-radius: 5px;
 }
 
 .curiosidades {
   grid-area: "curiosidades";
+  border-radius: 5px;
 }
+
 .flex-aside
 {
   display: flex;
@@ -171,6 +188,7 @@ footer {
   padding: 5px;
   justify-content: center;
   align-items: center;
+  
 }
 
 footer p {
@@ -243,11 +261,13 @@ footer p {
     flex: 100%;
     align-items: center;
     width: 100vw;
+    font-size: 70%;
   }
   .logo__menu {
     text-align: center;
     flex: 100%;
     /* text-align: center; */
+    margin: 0;
   }
 
   footer {
@@ -257,6 +277,16 @@ footer p {
   /* .logo {
     display: none;
   } */
+
+  .main-grid {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .modalidades-container {
+    margin-top: 30px;
+  }
+
 }
 
 @media (min-width: 1000px) {
