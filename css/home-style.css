@@ -184,7 +184,6 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: ". copy logos";
   background-color: #e7e0e0;;
-  width: 100vw;
   padding: 5px;
   justify-content: center;
   align-items: center;
