@@ -16,14 +16,6 @@
   background-size: cover;
   background-position: top;
 }
-.banner__parallax_bottom
-{
-  background-image: url("../img/paralax.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: top;
-}
 
 body
 {
@@ -44,12 +36,12 @@ button[type="reset"]
 {
   padding: 10px;
   margin-top: 20px;
-  border-radius: 10px;
+  border-radius: 8px;
   font-weight: bold;
   font-size: 20px;
   color: #031E6B;
   background-color: #f2f2f2;
-
+  border: none;
 }
 
 .flex__header {
@@ -59,7 +51,7 @@ button[type="reset"]
   align-items: center;
   background-color: #f2f2f2;
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   font-size: 1.3rem;
   font-weight: 600;
   scroll-behavior: smooth;
@@ -96,9 +88,10 @@ button[type="reset"]
   scroll-behavior: smooth;
   /* border: 1px solid red; */
   margin: 100px;
+  z-index: 2;
 }
 
-.modalidades-container a h2 {
+.modalidades-container a h2{
   color: #f2f2f2;
 }
 
@@ -110,7 +103,7 @@ button[type="reset"]
   max-width: 400px;
   min-width:300px;
   background-color: #DBDBDB;
-  border-radius: 5px;
+  border-radius: 8px;
   box-shadow: 1px -1px 7px #B5B5B5;
   margin-top:10px;
 }
@@ -124,7 +117,6 @@ button[type="reset"]
   grid-row: 1/1;
   text-align: center;
   margin-top: 10px;
-
 }
 
 .grid__item {
@@ -137,11 +129,12 @@ button[type="reset"]
 }
 
 .curiosidades {
+  border-radius: 8px;
   grid-area: "curiosidades";
 }
 
 .curiosidades img {
-  border-radius: 10px;
+  border-radius: 8px;
   box-shadow: 1px -1px 7px #B5B5B5;
 }
 
@@ -183,6 +176,13 @@ button[type="reset"]
   width: 200px;
   height: 200px;
   box-shadow: 1px -1px 7px #B5B5B5;
+}
+
+.item-flex:hover,
+.curiosidades:hover
+{
+  transform:translate(0%, -2%);
+  transition: all .3s linear;
 }
 /* Footer */
 footer {
