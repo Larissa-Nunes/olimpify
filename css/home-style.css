@@ -278,10 +278,10 @@ footer p {
     margin: 0;
   }
 
-  footer {
+  /* footer {
     padding: 1em;
     text-align: center;
-  }
+  } */
   /* .logo {
     display: none;
   } */
@@ -303,16 +303,13 @@ footer p {
 .flex__container__footer {
   display: flex;
   flex-wrap: wrap;
-  height: 8vh;
+  height: 10vh;
 }
 
 .flex-item-left {
   flex: 50%;
 }
 
-/* .flex-item-left > p {
-  margin: 30px;
-} */
 
 .flex-item-right {
   flex: 50%;
@@ -329,6 +326,10 @@ footer p {
 
   .flex-item-left > p {
     font-size: 10px;
+  }
+
+  .flex-item-right {
+    margin-bottom: 0;
   }
 }
 
