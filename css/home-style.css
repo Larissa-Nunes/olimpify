@@ -171,11 +171,9 @@ button[type="reset"]
 .item-flex {
   border-radius: 5px;
   text-align: center;
-  background-image: url('../sport-pages/atletismo/img/atletismo2.jpg');
-  background-size: cover;
   width: 200px;
   height: 200px;
-  box-shadow: 1px -1px 7px #B5B5B5;
+  box-shadow: 1px -1px 10px #aca8a8;
 }
 
 .item-flex:hover,
@@ -219,45 +217,12 @@ footer p {
   margin-right: 30px;
 }
 
-.img-atletismo
-{
-  background-image: url('https://larissa-nunes.github.io/atletismo3.jpg');
+.item-flex img {
+  width:200px;
+  height:200px;
+  border-radius: 5px;
 }
 
-.img-futebol
-{
-  background-image: url('https://larissa-nunes.github.io/futebol3.jpg');
-}
-
-.img-ginastica
-{
-  background-image: url('https://larissa-nunes.github.io/ginástica3.jpg');
-}
-
-.img-judo
-{
-  background-image: url('https://larissa-nunes.github.io/judo3.jpg');
-}
-
-.img-natacao
-{
-  background-image: url('https://larissa-nunes.github.io/natação2.jpg');
-}
-
-.img-peso
-{
-  background-image: url('https://larissa-nunes.github.io/peso3.jpg');
-}
-
-.img-skate
-{
-  background-image: url('https://larissa-nunes.github.io/skate3.jpg');
-}
-
-.img-volei
-{
-  background-image: url('https://larissa-nunes.github.io/volei3.jpg');
-}
 
 /* Responsive layout - makes a one column-layout instead of a two-column layout */
 
