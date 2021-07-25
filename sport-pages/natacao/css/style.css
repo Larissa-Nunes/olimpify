@@ -143,6 +143,26 @@ footer {
     align-items: center;
 }
 
+/* .flex__container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    height: 10vh;
+    background-color: black;
+  }
+  
+  .flex-item-left {
+    flex: 50%;
+  }
+  
+  
+  .flex-item-right {
+    flex: 50%;
+    display: inline-block;
+    text-align: center;
+    flex-direction: row-reverse;
+  } */
+  
+
 @media (min-width: 320px) and (max-width: 649px) {
     .flex__container__header {
         display: flex;
