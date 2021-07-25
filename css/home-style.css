@@ -140,7 +140,11 @@ li {
 
 .curiosidades {
   grid-area: "curiosidades";
-  border-radius: 5px;
+}
+
+.curiosidades img {
+  border-radius: 10px;
+  box-shadow: 1px -1px 7px #B5B5B5;
 }
 
 .flex-aside
@@ -184,7 +188,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: ". copy logos";
   background-color: #e7e0e0;;
-  width: 100vw;
+  /* width: 100vw; */
   padding: 5px;
   justify-content: center;
   align-items: center;
