@@ -140,7 +140,11 @@ li {
 
 .curiosidades {
   grid-area: "curiosidades";
-  border-radius: 5px;
+}
+
+.curiosidades img {
+  border-radius: 10px;
+  box-shadow: 1px -1px 7px #B5B5B5;
 }
 
 .flex-aside
