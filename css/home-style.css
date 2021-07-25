@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap');
 
 .banner__parallax {
-  background-image: url("../img/paralax.jpg");
+  background-image: url("../img/paralax2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -31,7 +31,10 @@ body
   padding: 10px;
   font-size: 24px;
 }
-
+li:hover
+{
+  transform: scale(1.2);
+}
 button[type="reset"] 
 {
   padding: 10px;
@@ -42,6 +45,17 @@ button[type="reset"]
   color: #031E6B;
   background-color: #f2f2f2;
   border: none;
+  cursor: pointer;
+}
+
+.texto
+{
+  font-size: 1.7rem;
+  color: #f2f2f2;
+  text-shadow: 0 0 0.2em black, 0 0 0.2em black, 0 0 0.2em black;
+  margin: 0 320px;
+  border-radius: 10px;
+  font-weight: 700;
 }
 
 .flex__header {
@@ -257,7 +271,10 @@ footer p {
   .modalidades-container {
     margin-top: 30px;
   }
-
+  .texto
+  {
+    margin:0;
+  }
 
 
 }
@@ -265,7 +282,7 @@ footer p {
 .flex__container__footer {
   display: flex;
   flex-wrap: wrap;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 .flex-item-left {
@@ -293,6 +310,7 @@ footer p {
   .flex-item-right {
     margin-bottom: 0;
   }
+
 }
 
 @media (min-width: 1000px) {
