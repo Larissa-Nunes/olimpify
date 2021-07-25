@@ -81,9 +81,6 @@ button[type="reset"]
   justify-content: space-around;
 }
 
-li {
-  /* padding: 10px; */
-}
 
 .menu li a {
   color: #031e6d;
