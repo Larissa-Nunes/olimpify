@@ -22,6 +22,7 @@
 }
 
 .flex__container__main {
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -153,6 +154,14 @@
         max-height: 80vh;
         justify-content: center;
         align-items: center;
+    }
+}
+
+@media (max-width:716px)
+{
+    .flex__container__main
+    {
+        margin-top:100px;
     }
 }
 

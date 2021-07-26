@@ -169,7 +169,14 @@ footer {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
-
+    .login
+    {
+       margin-bottom: 100px;
+    }
+    .login__form
+    {
+/*         height:65vh; */
+    }
     .texto__header p {
         font-size: 0.8em;
     }
@@ -178,12 +185,13 @@ footer {
         width: 150px;
     } 
     .login__container {
-        max-height: 500px;
+        min-height: 400px;
         width: 300px;
         background: #ffffff;
     }
     .text__area__mensagem {
         max-width: 250px;
+        max-height:70px;
     }
     a > img {
         width:27%;
@@ -200,6 +208,11 @@ footer {
     .login__logo img {
         width: 200px;
         text-align: center;
+    }
+    .login__input
+    {
+        height: 0px;
+        padding: 0px;
     }
 }
 

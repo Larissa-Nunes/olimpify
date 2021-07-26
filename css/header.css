@@ -1,3 +1,4 @@
+/*CONFIGURAÇÃO DO HEADER PADRÃO DE TODAS AS PÁGINAS*/
 .flex__header {
     display: flex;
     justify-content: space-between;
@@ -33,6 +34,7 @@
     font-weight: bold;
 }
 
+/*RESPONSIVIDADE*/
 @media (max-width: 900px) {
     .menu {
       flex: 100%;

@@ -165,7 +165,9 @@ button[type="submit"]:hover {
 .item__flex:hover,
 .curiosidades:hover
 {
-  transform:translate(0%, -2%);
+  opacity: 0.8;
+  transform:scale(1.1);
+  transition: all 0.3s ease;
 }
 
 /*  Footer  */
