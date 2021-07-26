@@ -180,7 +180,7 @@ footer {
     .texto__header {
         flex: 100%;
         font-size: 1.3em;
-        text-align: center;
+        text-align: left;
     }
     #slider {
         display: none;
