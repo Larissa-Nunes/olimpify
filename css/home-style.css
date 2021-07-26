@@ -10,7 +10,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap');
 
 .banner__parallax {
-  background-image: url("../img/paralax.jpg");
+  background-image: url("../img/paralax2.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -282,7 +282,7 @@ footer p {
 .flex__container__footer {
   display: flex;
   flex-wrap: wrap;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 .flex-item-left {
@@ -310,6 +310,7 @@ footer p {
   .flex-item-right {
     margin-bottom: 0;
   }
+
 }
 
 @media (min-width: 1000px) {
