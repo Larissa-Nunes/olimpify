@@ -62,7 +62,7 @@ button[type="submit"]:hover {
   font-weight: 700;
 }
 
-.main-grid {
+.main__grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
@@ -72,7 +72,7 @@ button[type="submit"]:hover {
   z-index: 2;
 }
 
-.modalidades-container a h2{
+.modalidades__container a h2{
   color: #f2f2f2;
 }
 
@@ -89,7 +89,7 @@ button[type="submit"]:hover {
   margin-top:10px;
 }
 
-.flex-main
+.flex__main
 {
   display: flex;
   margin-top: 30px;
@@ -122,7 +122,7 @@ button[type="submit"]:hover {
   box-shadow: 1px -1px 7px #B5B5B5;
 }
 
-.flex-aside
+.flex__aside
 {
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ button[type="submit"]:hover {
   width:300px;
   height:300px;
 }
-.modalidades-container {
+.modalidades__container {
   display: flex;
   margin: 10px auto;
   justify-content: center;
@@ -144,7 +144,7 @@ button[type="submit"]:hover {
   grid-area: "modalidades";
 }
 
-.modalidades-container > a > h2 {
+.modalidades__container > a > h2 {
   margin-top: 10px;
 }
 
@@ -154,7 +154,7 @@ button[type="submit"]:hover {
   height:50px;
 }
 
-.item-flex {
+.item__flex {
   border-radius: 5px;
   text-align: center;
   width: 200px;
@@ -162,7 +162,7 @@ button[type="submit"]:hover {
   box-shadow: 1px -1px 10px #aca8a8;
 }
 
-.item-flex:hover,
+.item__flex:hover,
 .curiosidades:hover
 {
   transform:translate(0%, -2%);
@@ -203,7 +203,7 @@ footer p {
   margin-right: 30px;
 } 
 
-.item-flex img {
+.item__flex img {
   width:200px;
   height:200px;
   border-radius: 5px;
@@ -225,7 +225,7 @@ footer p {
     margin: 0;
   }
   
-  .main-grid {
+  .main__grid {
     display: flex;
     flex-direction: column-reverse;
     margin: 0;
@@ -248,12 +248,12 @@ footer p {
   /* height: 10vh; */
 }
 
-.flex-item-left {
+.flex__item__left {
   flex: 50%;
 }
 
 
-.flex-item-right {
+.flex__item__right {
   flex: 50%;
   display: inline-block;
   text-align: center;
@@ -262,15 +262,15 @@ footer p {
 
 
 @media (max-width: 900px) {
-  .flex-item-right, .flex-item-left {
+  .flex__item__right, .flex__item__left {
     flex: 100%;
   }
 
-  .flex-item-left > p {
+  .flex__item__left > p {
     font-size: 10px;
   }
 
-  .flex-item-right {
+  .flex__item__right {
     margin-bottom: 0;
   }
 
