@@ -1,0 +1,10 @@
+.login__submit:hover {
+    background-position: right;
+}
+
+.login__title:hover {
+   background: linear-gradient(120deg, #031E6B, #4DE4CF);
+   color: white;
+   border-radius: 5px;
+   padding: 0 10px;
+}

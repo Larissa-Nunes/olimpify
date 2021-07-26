@@ -1,0 +1,214 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.flex__container__header {
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.flex__item__logo img {
+    width: 200px;
+    height: 100px;
+    margin-left: 17px;
+}
+
+.texto__header {
+    font-size: 1.6em;
+    margin-right: 40px;
+    color: #031E6B;
+}
+
+.login {
+    height: 100vh;
+    background: linear-gradient(120deg, #031E6B, #4DE4CF);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px solid;
+}
+
+.login__container {
+    max-height: 75vh;
+    width: 600px;
+    background: #ffffff;
+    box-sizing: border-box;
+    padding: 0 25px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login__container h1 {
+    font-size: 1.5em;
+}
+
+.login__logo {
+    width: 100%;
+    text-align: center;
+}
+
+a>img {
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.login__title {
+    color: #031E6B
+}
+
+.login__form {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 8px;
+    font-weight: bold;
+    color: #031E6B;
+}
+
+.imput__mensagem {
+    height: 20vh;
+}
+
+.login__input {
+    height: 48px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: unset;
+    outline: none;
+}
+
+.login__input-border {
+    height: 1px;
+    width: 100%;
+    margin-bottom: 16px;
+    background-color: #cfcfcf;
+}
+
+.login__submit {
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(120deg, #031E6B, #4DE4CF, #031E6B);
+    background-size: 200%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.div__botoes {
+    text-align: center;
+    width: 30vw;
+}
+
+.login__submit:focus {
+    height: 48px;
+    width: 100%;
+    outline: none;
+    background: linear-gradient(120deg, #4DE4CF, #031E6B, #4DE4CF);
+    background-size: 200%;
+    margin-bottom: 32px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    border: unset;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login__reset {
+    font-size: 14px;
+    color: #929292;
+    text-decoration: none;
+}
+
+.login__link {
+    font-size: 14px;
+    color: #929292;
+    text-decoration: none;
+}
+
+/* Animação por script */
+.remove__form {
+    opacity: 0;
+    /* animation: remove 500ms; */
+}
+
+@keyframes remove{
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(100vw);
+    }
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #030200;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+    .texto__header p {
+        font-size: 0.8em;
+    }
+
+    .flex__item__logo img {
+        width: 150px;
+    } 
+    .login__container {
+        max-height: 500px;
+        width: 300px;
+        background: #ffffff;
+    }
+    .text__area__mensagem {
+        max-width: 250px;
+    }
+    a > img {
+        max-width: 250px;
+        max-height: 70px;
+    }
+}
+
+/* Responsividade */
+@media (min-width: 768px) and (max-width: 1439px) {
+    .login__container {
+        max-height: 570px;
+        max-width: 500px;
+        background: #ffffff;
+    }
+    .login__logo img {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px) {
+    .login__container {
+        max-height: 650px;
+        background: #ffffff;
+    }
+}
