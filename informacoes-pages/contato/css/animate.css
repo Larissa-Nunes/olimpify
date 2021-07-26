@@ -21,16 +21,8 @@
     animation-timing-function: ease-out;
     animation-name: slidein;
 }
-
-@keyframes slidein {
-    from {
-        margin-left: -120%;
-    }
-
-    to {
-        margin-top: 0%;
-    }
-
-
-
+.login__form *
+{
+    margin: 10px;
 }
+

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 * {
     margin: 0;
     padding: 0;
@@ -62,11 +61,6 @@ body
     justify-content: space-around;
 }
 
-li:hover
-{
-  transform: scale(1.2);
-}
-
 li
 {
     display: inline-block;
@@ -91,131 +85,4 @@ footer {
 .flex-item-1
 {
     flex:100%;
-=======
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-
-
-
-
-.login {
-    height: 100vh;
-    background: linear-gradient(120deg, #031E6B, #4DE4CF);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: solid 1px solid;
-}
-
-.login__container {
-    min-height: 500px;
-    width: 300px;
-    background: #ffffff;
-    box-sizing: border-box;
-    padding: 32px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.login__logo {
-    width: 100%;   
-    text-align: center;
-}
-
-a > img {
-    width: 60%;     
-}
-
-.login__title {
-    margin-bottom: 32px;
-    color: #031E6B
-}
-
-.login__form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-label {
-   /* display: flex;           
-   flex-direction: row;
-   align-items: flex-end;
-   color: thistle;
-   font-weight: bold; */
-
-   width: 100%;
-   box-sizing: border-box;
-   padding: 0 8px;
-   font-weight: bold;
-   color: #031E6B;
-   
-}
-
-.login__input {
-    height: 48px;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 8px;
-    border: unset;
-    outline: none;
-}
-
-.login__input-border {
-    height: 1px;
-    width: 100%;
-    margin-bottom: 16px;
-    background-color:#cfcfcf;
-}
-
-.login__submit {
-    height: 48px;
-    width: 100%;
-    outline: none;
-    background:linear-gradient(120deg,#031E6B, #4DE4CF, #031E6B);
-    background-size: 200%;
-    margin-bottom: 32px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    border: unset;
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-
-.login__submit:focus {
-    height: 48px;
-    width: 100%;
-    outline: none;
-    background:linear-gradient(120deg,#4DE4CF, #031E6B, #4DE4CF);
-    background-size: 200%;
-    margin-bottom: 32px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    border: unset;
-    border-radius: 4px;
-    cursor: pointer;
-
-}
-
-
-.login__reset {
-    font-size: 14px;
-    color: #929292;
-    text-decoration: none;
-}
-
-.login__link {
-    font-size: 14px;
-    color: #929292;
-    text-decoration: none;
->>>>>>> 505b106666979b56bf517d5723f759ec3a53d4cc
 }
