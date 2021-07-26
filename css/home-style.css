@@ -194,7 +194,6 @@ button[type="reset"]
 .curiosidades:hover
 {
   transform:translate(0%, -2%);
-  transition: all .3s linear;
 }
 /* Footer */
 footer {
@@ -250,18 +249,9 @@ footer p {
   .logo__menu {
     text-align: center;
     flex: 100%;
-    /* text-align: center; */
     margin: 0;
   }
-
-  /* footer {
-    padding: 1em;
-    text-align: center;
-  } */
-  /* .logo {
-    display: none;
-  } */
-
+  
   .main-grid {
     display: flex;
     flex-direction: column-reverse;

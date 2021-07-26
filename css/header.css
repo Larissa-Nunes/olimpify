@@ -1,0 +1,49 @@
+.flex__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: fixed;
+    top:0;
+    z-index: 3;
+    font-size: 1.3rem;
+    font-weight: 600;
+    scroll-behavior: smooth;
+}
+
+.logo__menu {
+    flex: 50%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.logo__menu img {
+    width: 27%;
+}
+
+.menu {
+    display: flex;
+    flex: 50%;
+    justify-content: space-around;
+}
+
+.menu li a {
+    color: #031e6d;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .menu {
+      flex: 100%;
+      align-items: center;
+      width: 100vw;
+      font-size: 70%;
+    }
+    .logo__menu {
+      text-align: center;
+      flex: 100%;
+      margin: 0;
+    }
+}
+

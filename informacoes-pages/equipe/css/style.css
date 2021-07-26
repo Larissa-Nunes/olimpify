@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap');
+
+.flex__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #f2f2f2;
+    position: fixed;
+    top:0;
+    z-index: 3;
+    font-size: 1.3rem;
+    font-weight: 600;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-family: 'Spartan', sans-serif;
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(120deg, #031E6B, #4DE4CF);
+}
+.logo__menu {
+    flex: 50%;
+    padding: 10px;
+    text-align: justify;
+}
+
+.logo__menu img {
+    width: 27%;
+}
+
+.menu {
+    display: flex;
+    flex: 50%;
+    justify-content: space-around;
+}
+
+
+.menu li a {
+    color: #031e6d;
+    font-weight: bold;
+}
+
+.flex-container
+{
+    width:65vw;
+    margin:300px auto;
+    display: flex;
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li:hover
+{
+  transform: scale(1.2);
+}
+
+li
+{
+    display: inline-block;
+}
+.equipe > ul > li:hover
+{
+    border-radius: 50%;
+    box-shadow: 1px -1px 5px #3f3f3f;
+    transform:translate(0%, -7%);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #030200;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item-1
+{
+    flex:100%;
+}
