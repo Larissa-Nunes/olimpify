@@ -1,14 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
-  scroll-behavior: smooth;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;600&display=swap');
-
 .banner__parallax {
   background-image: url("../img/paralax2.jpg");
   background-repeat: no-repeat;
@@ -24,6 +13,7 @@ body
   font-size: 15px;
   background: linear-gradient(120deg, #031E6B, #4DE4CF);
 }
+
 .detalhe {
   height: 800px;
   transform: translate(0, 50%);
@@ -31,6 +21,7 @@ body
   padding: 10px;
   font-size: 24px;
 }
+
 li:hover
 {
   transform: scale(1.2);
@@ -59,17 +50,6 @@ button[type="submit"]:hover {
   background-position: right;
 }
 
-@keyframes slidein {
-  from {
-      margin-left: -120%;
-  }
-
-  to {
-      margin-top: 0%;
-  }
-
-}
-
 /* BOTÃO */
 
 .texto
@@ -82,49 +62,12 @@ button[type="submit"]:hover {
   font-weight: 700;
 }
 
-.flex__header {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: center;
-  background-color: #f2f2f2;
-  position: fixed;
-  z-index: 3;
-  font-size: 1.3rem;
-  font-weight: 600;
-  scroll-behavior: smooth;
-}
-
-.logo__menu {
-  flex: 50%;
-  padding: 10px;
-  text-align: justify;
-}
-
-.logo__menu img {
-  width: 27%;
-}
-
-.menu {
-  display: flex;
-  flex: 50%;
-  justify-content: space-around;
-}
-
-
-.menu li a {
-  color: #031e6d;
-  font-weight: bold;
-}
-
 .main-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "modalidades medalhas" "modalidades curiosidades";
-/*   margin-top: 100px; */
   scroll-behavior: smooth;
-  /* border: 1px solid red; */
   margin: 100px;
   z-index: 2;
 }
@@ -145,11 +88,13 @@ button[type="submit"]:hover {
   box-shadow: 1px -1px 7px #B5B5B5;
   margin-top:10px;
 }
+
 .flex-main
 {
   display: flex;
   margin-top: 30px;
 }
+
 .grid__title {
   grid-column: 1/5;
   grid-row: 1/1;
@@ -202,11 +147,13 @@ button[type="submit"]:hover {
 .modalidades-container > a > h2 {
   margin-top: 10px;
 }
+
 .pais 
 {
   width:55px;
   height:50px;
 }
+
 .item-flex {
   border-radius: 5px;
   text-align: center;
@@ -220,7 +167,8 @@ button[type="submit"]:hover {
 {
   transform:translate(0%, -2%);
 }
-/* Footer */
+
+/*  Footer  */
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -253,7 +201,7 @@ footer p {
 
 .poweredby div {
   margin-right: 30px;
-}
+} 
 
 .item-flex img {
   width:200px;

@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../../css/default.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/reset.css">
     <!-- Hover -->
     <link rel="stylesheet" href="./css/hover.css">
     <!-- Animations -->
@@ -17,13 +21,15 @@
 </head>
 
 <body>
-    <header class="flex__container__header">
-        <div class="flex__item__logo">
-            <a href="../../index.html"><img src="./imgs/teste de logo2.jpg" alt="logo"></a>
+    <header class="flex__header">
+        <div class="logo__menu">
+            <a href="../../index.html"><img src="../../img/logo.png" alt="logo"></a>
         </div>
-        <div class="texto__header">
-            <p>Contato</p>
-        </div>
+        <ul class="menu">
+            <li>
+                <p>Contato</p>
+            </li>
+        </ul>
     </header><!-- Fim header -->
     <main class="login">
         <div class="login__container">
@@ -39,11 +45,7 @@
                 <label for="email">E-mail:</label>
                 <input class="login__input" type="email" id="email" name="email" placeholder="Digite seu e-mail">
                 <span class="login__input-border"></span>
-
-                <!--              <label for="assunto">Assunto:</label>
-                <input class="login__input" type="text" id="assunto" name="assunto" placeholder="Digite o assunto">
-                <span class="login__input-border"></span> -->
-
+                
                 <label for="mensagem">Mensagem:</label>
                 <textarea class="text__area__mensagem" name="mensagem" id="mensagem" cols="60" rows="7" maxlength="700"
                     placeholder="Digite sua mensagem"></textarea>
