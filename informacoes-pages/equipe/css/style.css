@@ -38,7 +38,7 @@ a > img {
 }
 
 .login__title {
-    margin-bottom: 18px;
+    margin-bottom: 32px;
     color: #031E6B
 }
 
@@ -65,7 +65,7 @@ label {
 }
 
 .login__input {
-    height: 27px;
+    height: 48px;
     width: 100%;
     box-sizing: border-box;
     padding: 8px;
